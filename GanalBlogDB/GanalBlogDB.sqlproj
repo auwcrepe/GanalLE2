@@ -58,12 +58,21 @@
     <Folder Include="Properties" />
     <Folder Include="dbo" />
     <Folder Include="dbo\Tables" />
+    <Folder Include="Stored Procedure" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\Users.sql" />
     <Build Include="dbo\Tables\Posts.sql" />
+    <Build Include="Stored Procedure\spUsers_Authenticate.sql" />
+    <Build Include="Stored Procedure\spUsers_Register.sql" />
+    <Build Include="Stored Procedure\spPosts_Insert.sql" />
+    <Build Include="Stored Procedure\spPosts_List.sql" />
+    <Build Include="Stored Procedure\spPosts_Detail.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GanalBlogDB.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="GanalBlogDB.refactorlog" />
   </ItemGroup>
 </Project>

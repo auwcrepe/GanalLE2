@@ -41,6 +41,7 @@ namespace BlogDataLibrary.Database
                 List<T> rows = connection.Query<T>(sqlStatement, parameters, commandType: commandType).ToList();
                 return rows;
             }
+        }
 
             public void SaveData<T>(string sqlStatement,
                 T parameters,
